@@ -11,3 +11,16 @@ Thumbs.db
 # Logs
 *.log
 
+# Data files (временные данные из API)
+data/
+*.raw.json
+
+# Node modules (если будет использоваться)
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python

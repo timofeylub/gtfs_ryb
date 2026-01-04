@@ -12,157 +12,175 @@
     {
       "id": "stop_002",
       "name": "Улица Буксирная",
-      "latitude": 58.0500,
-      "longitude": 38.8600,
+      "latitude": 58.05,
+      "longitude": 38.86,
       "type": "bus"
     },
     {
       "id": "stop_003",
       "name": "Скоморохова гора",
-      "latitude": 58.0450,
-      "longitude": 38.8500,
-      "type": "bus"
+      "latitude": 58.043248,
+      "longitude": 38.807165,
+      "type": "bus",
+      "address": "Ярославская область, Рыбинск, улица Фурманова",
+      "station_id": 6185
     },
     {
       "id": "stop_004",
       "name": "Железнодорожный вокзал",
-      "latitude": 58.0430,
-      "longitude": 38.8400,
-      "type": "bus"
+      "latitude": 58.042897,
+      "longitude": 38.833471,
+      "type": "bus",
+      "address": "Ярославская область, Рыбинск, Вокзальная улица",
+      "station_id": 6224
     },
     {
       "id": "stop_005",
       "name": "Больница № 4",
-      "latitude": 58.0550,
-      "longitude": 38.8700,
+      "latitude": 58.055,
+      "longitude": 38.87,
       "type": "bus"
     },
     {
       "id": "stop_006",
       "name": "Микрорайон ГЭС-14",
-      "latitude": 58.0600,
-      "longitude": 38.8800,
+      "latitude": 58.06,
+      "longitude": 38.88,
       "type": "bus"
     },
     {
       "id": "stop_007",
       "name": "Троллейбусный парк",
-      "latitude": 58.0400,
-      "longitude": 38.8300,
-      "type": "bus"
+      "latitude": 58.055955,
+      "longitude": 38.75166,
+      "type": "bus",
+      "address": "Ярославская область, Рыбинск, Глебовская улица",
+      "station_id": 6049
     },
     {
       "id": "stop_008",
       "name": "Мариевка",
-      "latitude": 58.0350,
-      "longitude": 38.8200,
-      "type": "bus"
+      "latitude": 58.024516,
+      "longitude": 38.864822,
+      "type": "bus",
+      "address": "Ярославская область, Рыбинск, проспект Генерала Батова",
+      "station_id": 6147
     },
     {
       "id": "stop_009",
       "name": "Соборная площадь",
-      "latitude": 58.0440,
-      "longitude": 38.8420,
-      "type": "bus"
+      "latitude": 58.048145,
+      "longitude": 38.858191,
+      "type": "bus",
+      "address": "Ярославская область, Рыбинск, Крестовая улица",
+      "station_id": 6156
     },
     {
       "id": "stop_010",
       "name": "Улица Каляева",
-      "latitude": 58.0460,
-      "longitude": 38.8440,
+      "latitude": 58.046,
+      "longitude": 38.844,
       "type": "bus"
     },
     {
       "id": "stop_011",
       "name": "Слип",
-      "latitude": 58.0380,
-      "longitude": 38.8250,
-      "type": "bus"
+      "latitude": 58.045709,
+      "longitude": 38.911986,
+      "type": "bus",
+      "address": "Ярославская область, Рыбинск, улица Пестеля",
+      "station_id": 6048
     },
     {
       "id": "stop_012",
       "name": "Улица Балобановская",
-      "latitude": 58.0420,
-      "longitude": 38.8380,
+      "latitude": 58.042,
+      "longitude": 38.838,
       "type": "bus"
     },
     {
       "id": "stop_013",
       "name": "Призма",
-      "latitude": 58.0470,
-      "longitude": 38.8460,
-      "type": "bus"
+      "latitude": 58.020917,
+      "longitude": 38.844594,
+      "type": "bus",
+      "address": "Ярославская область, Рыбинск, 1-я Выборгская улица",
+      "station_id": 6244
     },
     {
       "id": "stop_014",
       "name": "ЗАО «Свобода»",
-      "latitude": 58.0410,
-      "longitude": 38.8360,
+      "latitude": 58.041,
+      "longitude": 38.836,
       "type": "bus"
     },
     {
       "id": "stop_015",
       "name": "Больница № 3",
-      "latitude": 58.0520,
-      "longitude": 38.8650,
+      "latitude": 58.052,
+      "longitude": 38.865,
       "type": "bus"
     },
     {
       "id": "stop_016",
       "name": "Железнодорожный переезд",
-      "latitude": 58.0400,
-      "longitude": 38.8320,
-      "type": "bus"
+      "latitude": 58.006278,
+      "longitude": 38.902272,
+      "type": "bus",
+      "address": "Ярославская область, Рыбинск, Окружная дорога",
+      "station_id": 6330
     },
     {
       "id": "stop_017",
       "name": "Улица Тарасова",
-      "latitude": 58.0450,
-      "longitude": 38.8430,
+      "latitude": 58.045,
+      "longitude": 38.843,
       "type": "bus"
     },
     {
       "id": "stop_018",
       "name": "Улица Максима Горького",
-      "latitude": 58.0430,
-      "longitude": 38.8410,
+      "latitude": 58.043,
+      "longitude": 38.841,
       "type": "bus"
     },
     {
       "id": "stop_019",
       "name": "Улица Костромская",
-      "latitude": 58.0440,
-      "longitude": 38.8400,
+      "latitude": 58.044,
+      "longitude": 38.84,
       "type": "bus"
     },
     {
       "id": "stop_020",
       "name": "Улица Расторгуева",
-      "latitude": 58.0460,
-      "longitude": 38.8480,
+      "latitude": 58.046,
+      "longitude": 38.848,
       "type": "trolleybus"
     },
     {
       "id": "stop_021",
       "name": "Улица Куйбышева",
-      "latitude": 58.0480,
-      "longitude": 38.8500,
+      "latitude": 58.048,
+      "longitude": 38.85,
       "type": "trolleybus"
     },
     {
       "id": "stop_022",
       "name": "Улица Блюхера",
-      "latitude": 58.0470,
-      "longitude": 38.8490,
+      "latitude": 58.047,
+      "longitude": 38.849,
       "type": "trolleybus"
     },
     {
       "id": "stop_023",
       "name": "Сады «Дружба»",
-      "latitude": 58.0300,
-      "longitude": 38.8100,
-      "type": "bus"
+      "latitude": 58.021318,
+      "longitude": 38.828912,
+      "type": "bus",
+      "address": "Ярославская область, Рыбинск, Софийская улица",
+      "station_id": 6319
     }
-  ]
+  ],
+  "note": "Координаты обновлены из API yarobl.dtpax.ru"
 }
-

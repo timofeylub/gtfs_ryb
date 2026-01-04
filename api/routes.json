@@ -1,6 +1,7 @@
 {
   "city": "Рыбинск",
   "last_updated": "2025-01-27T00:00:00Z",
+  "note": "Все маршруты активны. Поле 'updated' указывает дату последнего обновления информации о маршруте.",
   "routes": {
     "bus": [
       {
@@ -148,8 +149,8 @@
         "number": "18",
         "name": "Троллейбусный парк - Слип",
         "type": "bus",
-        "status": "planned",
-        "planned_from": "2026-01-01"
+        "status": "active",
+        "updated": "2026-01-01"
       },
       {
         "id": "19",
@@ -163,16 +164,16 @@
         "number": "20",
         "name": "Улица Максима Горького - Улица Костромская",
         "type": "bus",
-        "status": "planned",
-        "planned_from": "2026-01-01"
+        "status": "active",
+        "updated": "2026-01-01"
       },
       {
         "id": "25",
         "number": "25",
         "name": "Улица Расторгуева - Улица Куйбышева",
         "type": "bus",
-        "status": "planned",
-        "planned_from": "2026-01-01"
+        "status": "active",
+        "updated": "2026-01-01"
       },
       {
         "id": "29",
@@ -216,32 +217,32 @@
         "number": "1",
         "name": "Улица Расторгуева - Улица Куйбышева",
         "type": "trolleybus",
-        "status": "planned",
-        "planned_from": "2026-01-01"
+        "status": "active",
+        "updated": "2026-01-01"
       },
       {
         "id": "t4",
         "number": "4",
         "name": "Улица Расторгуева - Улица Блюхера",
         "type": "trolleybus",
-        "status": "planned",
-        "planned_from": "2026-01-01"
+        "status": "active",
+        "updated": "2026-01-01"
       },
       {
         "id": "t5",
         "number": "5",
         "name": "Троллейбусный парк - Улица Куйбышева",
         "type": "trolleybus",
-        "status": "planned",
-        "planned_from": "2026-01-01"
+        "status": "active",
+        "updated": "2026-01-01"
       },
       {
         "id": "t6",
         "number": "6",
         "name": "Троллейбусный парк - Призма",
         "type": "trolleybus",
-        "status": "planned",
-        "planned_from": "2026-01-01"
+        "status": "active",
+        "updated": "2026-01-01"
       }
     ]
   }

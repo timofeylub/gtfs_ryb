@@ -2,24 +2,45 @@
   "city": "Рыбинск",
   "last_updated": "2025-01-27T00:00:00Z",
   "predictions": {
-    "note": "Прогнозы времени прибытия требуют интеграции с реальными данными GPS/GNSS транспорта. Данный файл содержит структуру для будущей реализации.",
-    "stops": []
+    "note": "Прогнозы времени прибытия транспорта на остановки",
+    "available": true,
+    "data_source": "Расписания движения транспорта",
+    "method": "На основе расписания движения и текущего времени рассчитывается примерное время прибытия следующего транспорта"
   },
   "realtime": {
     "available": false,
-    "message": "Сервис прогнозов в разработке. Для получения актуальных данных требуется интеграция с системой мониторинга транспорта."
+    "message": "Сервис реального времени в разработке. Для получения актуальных данных требуется интеграция с системой мониторинга транспорта (GPS/GNSS)."
   },
   "schedule": {
-    "note": "Расписание движения транспорта можно получить из GTFS файлов (trips.txt, stop_times.txt)",
+    "note": "Расписание движения транспорта доступно в детальных данных маршрутов (api/route-details/)",
     "typical_intervals": {
       "weekday": "10-15 минут",
       "saturday": "15-20 минут",
-      "sunday": "20-30 минут"
+      "sunday": "20-30 минут",
+      "peak_hours": "5-10 минут",
+      "off_peak": "15-30 минут"
     },
     "operating_hours": {
-      "first_trip": "05:30",
-      "last_trip": "23:00"
+      "first_trip": "05:00",
+      "last_trip": "23:00",
+      "night_routes": ["2Н", "8Н", "16Н"]
+    },
+    "seasonal_variations": {
+      "winter": {
+        "period": "16 октября - 14 апреля",
+        "note": "Некоторые маршруты имеют измененное расписание в зимний период"
+      },
+      "summer": {
+        "period": "15 апреля - 15 октября",
+        "note": "Увеличенная частота движения на некоторых маршрутах"
+      }
+    }
+  },
+  "usage": {
+    "note": "Для получения прогноза времени прибытия используйте расписания из api/route-details/{route_id}.json",
+    "example": {
+      "description": "Найти следующее время отправления для маршрута",
+      "code": "const route = await fetch('api/route-details/bus-1.json').then(r => r.json());\nconst now = new Date();\nconst currentTime = now.getHours() * 60 + now.getMinutes();\nconst times = route.schedules.weekday.forward.times\n  .map(t => t.split(':').map(Number))\n  .map(([h, m]) => h * 60 + m)\n  .filter(t => t > currentTime);\nconst nextTime = times[0];\nconsole.log(`Следующий рейс через ${nextTime - currentTime} минут`);"
     }
   }
 }
-

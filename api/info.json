@@ -8,8 +8,8 @@
     "total_routes": 34,
     "bus_routes": 30,
     "trolleybus_routes": 4,
-    "active_routes": 27,
-    "planned_routes": 7,
+    "active_routes": 34,
+    "planned_routes": 0,
     "total_stops": 23
   },
   "features": {
