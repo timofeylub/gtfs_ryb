@@ -1,0 +1,29 @@
+{
+  "city": "Рыбинск",
+  "region": "Ярославская область",
+  "country": "Россия",
+  "api_version": "1.0.0",
+  "last_updated": "2025-01-27T00:00:00Z",
+  "statistics": {
+    "total_routes": 34,
+    "bus_routes": 30,
+    "trolleybus_routes": 4,
+    "active_routes": 27,
+    "planned_routes": 7,
+    "total_stops": 23
+  },
+  "features": {
+    "routes_api": true,
+    "stops_api": true,
+    "gtfs_data": true,
+    "predictions": false,
+    "realtime": false
+  },
+  "contact": {
+    "repository": "https://github.com/your-username/RT_Marsrutnik",
+    "issues": "https://github.com/your-username/RT_Marsrutnik/issues"
+  },
+  "license": "Public Domain",
+  "data_source": "Официальные данные о маршрутах общественного транспорта г. Рыбинска"
+}
+

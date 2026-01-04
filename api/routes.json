@@ -1,0 +1,249 @@
+{
+  "city": "Рыбинск",
+  "last_updated": "2025-01-27T00:00:00Z",
+  "routes": {
+    "bus": [
+      {
+        "id": "1",
+        "number": "1",
+        "name": "ПАТП № 1 - Улица Буксирная",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "2",
+        "number": "2",
+        "name": "Скоморохова гора - Улица Буксирная",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "3",
+        "number": "3",
+        "name": "Железнодорожный вокзал - Больница № 4",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "5",
+        "number": "5",
+        "name": "Железнодорожный вокзал - Микрорайон ГЭС-14",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "6",
+        "number": "6",
+        "name": "ПАТП № 1 - Скоморохова гора",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "7",
+        "number": "7",
+        "name": "Троллейбусный парк - Мариевка",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "8",
+        "number": "8",
+        "name": "Соборная площадь - Улица Каляева",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "8T",
+        "number": "8Т",
+        "name": "Троллейбусный парк - Слип",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "9",
+        "number": "9",
+        "name": "Железнодорожный вокзал - Улица Балобановская",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "10",
+        "number": "10",
+        "name": "Троллейбусный парк - Призма",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "10S",
+        "number": "10С",
+        "name": "ЗАО «Свобода» - Призма",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "11",
+        "number": "11",
+        "name": "Соборная площадь - Улица Каляева",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "12",
+        "number": "12",
+        "name": "ПАТП № 1 - Призма",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "14",
+        "number": "14",
+        "name": "Больница № 4 - Микрорайон ГЭС-14",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "14K",
+        "number": "14К",
+        "name": "Больница № 4 - Больница № 3",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "15",
+        "number": "15",
+        "name": "Железнодорожный вокзал - Соборная площадь",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "16",
+        "number": "16",
+        "name": "Железнодорожный вокзал - Микрорайон ГЭС-14",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "16T",
+        "number": "16Т",
+        "name": "Железнодорожный вокзал - Больница № 3",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "17",
+        "number": "17",
+        "name": "Железнодорожный вокзал - Железнодорожный переезд",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "17K",
+        "number": "17К",
+        "name": "Железнодорожный вокзал - Больница № 3",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "18",
+        "number": "18",
+        "name": "Троллейбусный парк - Слип",
+        "type": "bus",
+        "status": "planned",
+        "planned_from": "2026-01-01"
+      },
+      {
+        "id": "19",
+        "number": "19",
+        "name": "Соборная площадь - Улица Тарасова",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "20",
+        "number": "20",
+        "name": "Улица Максима Горького - Улица Костромская",
+        "type": "bus",
+        "status": "planned",
+        "planned_from": "2026-01-01"
+      },
+      {
+        "id": "25",
+        "number": "25",
+        "name": "Улица Расторгуева - Улица Куйбышева",
+        "type": "bus",
+        "status": "planned",
+        "planned_from": "2026-01-01"
+      },
+      {
+        "id": "29",
+        "number": "29",
+        "name": "Железнодорожный вокзал - Сады «Дружба»",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "33",
+        "number": "33",
+        "name": "Призма - Больница № 4",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "2N",
+        "number": "2Н",
+        "name": "Скоморохова гора - Улица Буксирная",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "8N",
+        "number": "8Н",
+        "name": "Троллейбусный парк - Слип",
+        "type": "bus",
+        "status": "active"
+      },
+      {
+        "id": "16N",
+        "number": "16Н",
+        "name": "Железнодорожный вокзал - Больница № 3",
+        "type": "bus",
+        "status": "active"
+      }
+    ],
+    "trolleybus": [
+      {
+        "id": "t1",
+        "number": "1",
+        "name": "Улица Расторгуева - Улица Куйбышева",
+        "type": "trolleybus",
+        "status": "planned",
+        "planned_from": "2026-01-01"
+      },
+      {
+        "id": "t4",
+        "number": "4",
+        "name": "Улица Расторгуева - Улица Блюхера",
+        "type": "trolleybus",
+        "status": "planned",
+        "planned_from": "2026-01-01"
+      },
+      {
+        "id": "t5",
+        "number": "5",
+        "name": "Троллейбусный парк - Улица Куйбышева",
+        "type": "trolleybus",
+        "status": "planned",
+        "planned_from": "2026-01-01"
+      },
+      {
+        "id": "t6",
+        "number": "6",
+        "name": "Троллейбусный парк - Призма",
+        "type": "trolleybus",
+        "status": "planned",
+        "planned_from": "2026-01-01"
+      }
+    ]
+  }
+}
+

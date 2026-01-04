@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примеры использования API - Рыбинск</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .example {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .example h2 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        pre {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 0.9em;
+        }
+        .run-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .run-btn:hover {
+            background: #5568d3;
+        }
+        .result {
+            margin-top: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+            display: none;
+        }
+        .result.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 Примеры использования API</h1>
+
+    <div class="example">
+        <h2>Пример 1: Получить все маршруты</h2>
+        <pre><code>fetch('api/routes.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Всего маршрутов:', 
+      data.routes.bus.length + data.routes.trolleybus.length);
+    console.log('Автобусы:', data.routes.bus);
+    console.log('Троллейбусы:', data.routes.trolleybus);
+  });</code></pre>
+        <button class="run-btn" onclick="example1()">Запустить</button>
+        <div id="result1" class="result"></div>
+    </div>
+
+    <div class="example">
+        <h2>Пример 2: Найти маршруты по остановке</h2>
+        <pre><code>async function findRoutesByStop(stopName) {
+  const routesRes = await fetch('api/routes.json');
+  const routes = await routesRes.json();
+  
+  // Фильтруем маршруты, которые проходят через остановку
+  const allRoutes = [...routes.routes.bus, ...routes.routes.trolleybus];
+  const filtered = allRoutes.filter(route => 
+    route.name.includes(stopName)
+  );
+  
+  return filtered;
+}
+
+findRoutesByStop('Железнодорожный вокзал')
+  .then(routes => console.log(routes));</code></pre>
+        <button class="run-btn" onclick="example2()">Запустить</button>
+        <div id="result2" class="result"></div>
+    </div>
+
+    <div class="example">
+        <h2>Пример 3: Получить статистику</h2>
+        <pre><code>fetch('api/info.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Статистика:', data.statistics);
+    console.log('Доступные функции:', data.features);
+  });</code></pre>
+        <button class="run-btn" onclick="example3()">Запустить</button>
+        <div id="result3" class="result"></div>
+    </div>
+
+    <div class="example">
+        <h2>Пример 4: Получить все остановки с координатами</h2>
+        <pre><code>fetch('api/stops.json')
+  .then(response => response.json())
+  .then(data => {
+    data.stops.forEach(stop => {
+      console.log(`${stop.name}: ${stop.latitude}, ${stop.longitude}`);
+    });
+  });</code></pre>
+        <button class="run-btn" onclick="example4()">Запустить</button>
+        <div id="result4" class="result"></div>
+    </div>
+
+    <div class="example">
+        <h2>Пример 5: Фильтрация активных маршрутов</h2>
+        <pre><code>fetch('api/routes.json')
+  .then(response => response.json())
+  .then(data => {
+    const allRoutes = [...data.routes.bus, ...data.routes.trolleybus];
+    const activeRoutes = allRoutes.filter(r => r.status === 'active');
+    console.log('Активных маршрутов:', activeRoutes.length);
+    console.log('Активные маршруты:', activeRoutes);
+  });</code></pre>
+        <button class="run-btn" onclick="example5()">Запустить</button>
+        <div id="result5" class="result"></div>
+    </div>
+
+    <script>
+        function showResult(id, content) {
+            const result = document.getElementById(id);
+            result.textContent = content;
+            result.classList.add('show');
+        }
+
+        async function example1() {
+            try {
+                const response = await fetch('api/routes.json');
+                const data = await response.json();
+                const total = data.routes.bus.length + data.routes.trolleybus.length;
+                showResult('result1', 
+                    `Всего маршрутов: ${total}\n` +
+                    `Автобусов: ${data.routes.bus.length}\n` +
+                    `Троллейбусов: ${data.routes.trolleybus.length}`
+                );
+            } catch (error) {
+                showResult('result1', 'Ошибка: ' + error.message);
+            }
+        }
+
+        async function example2() {
+            try {
+                const routesRes = await fetch('api/routes.json');
+                const routes = await routesRes.json();
+                const allRoutes = [...routes.routes.bus, ...routes.routes.trolleybus];
+                const filtered = allRoutes.filter(route => 
+                    route.name.includes('Железнодорожный вокзал')
+                );
+                showResult('result2', 
+                    `Найдено маршрутов через "Железнодорожный вокзал": ${filtered.length}\n\n` +
+                    filtered.map(r => `• ${r.number}: ${r.name}`).join('\n')
+                );
+            } catch (error) {
+                showResult('result2', 'Ошибка: ' + error.message);
+            }
+        }
+
+        async function example3() {
+            try {
+                const response = await fetch('api/info.json');
+                const data = await response.json();
+                showResult('result3', 
+                    `Статистика:\n` +
+                    `• Всего маршрутов: ${data.statistics.total_routes}\n` +
+                    `• Автобусов: ${data.statistics.bus_routes}\n` +
+                    `• Троллейбусов: ${data.statistics.trolleybus_routes}\n` +
+                    `• Активных: ${data.statistics.active_routes}\n` +
+                    `• Планируемых: ${data.statistics.planned_routes}\n` +
+                    `• Остановок: ${data.statistics.total_stops}`
+                );
+            } catch (error) {
+                showResult('result3', 'Ошибка: ' + error.message);
+            }
+        }
+
+        async function example4() {
+            try {
+                const response = await fetch('api/stops.json');
+                const data = await response.json();
+                const stopsList = data.stops.slice(0, 5).map(stop => 
+                    `${stop.name}: ${stop.latitude}, ${stop.longitude}`
+                ).join('\n');
+                showResult('result4', 
+                    `Первые 5 остановок:\n\n${stopsList}\n\n... и еще ${data.stops.length - 5} остановок`
+                );
+            } catch (error) {
+                showResult('result4', 'Ошибка: ' + error.message);
+            }
+        }
+
+        async function example5() {
+            try {
+                const response = await fetch('api/routes.json');
+                const data = await response.json();
+                const allRoutes = [...data.routes.bus, ...data.routes.trolleybus];
+                const activeRoutes = allRoutes.filter(r => r.status === 'active');
+                const activeList = activeRoutes.slice(0, 10).map(r => 
+                    `• ${r.number}: ${r.name}`
+                ).join('\n');
+                showResult('result5', 
+                    `Активных маршрутов: ${activeRoutes.length}\n\n` +
+                    `Примеры:\n${activeList}${activeRoutes.length > 10 ? '\n... и еще ' + (activeRoutes.length - 10) + ' маршрутов' : ''}`
+                );
+            } catch (error) {
+                showResult('result5', 'Ошибка: ' + error.message);
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,168 @@
+{
+  "city": "Рыбинск",
+  "last_updated": "2025-01-27T00:00:00Z",
+  "stops": [
+    {
+      "id": "stop_001",
+      "name": "ПАТП № 1",
+      "latitude": 58.0486,
+      "longitude": 38.8572,
+      "type": "bus"
+    },
+    {
+      "id": "stop_002",
+      "name": "Улица Буксирная",
+      "latitude": 58.0500,
+      "longitude": 38.8600,
+      "type": "bus"
+    },
+    {
+      "id": "stop_003",
+      "name": "Скоморохова гора",
+      "latitude": 58.0450,
+      "longitude": 38.8500,
+      "type": "bus"
+    },
+    {
+      "id": "stop_004",
+      "name": "Железнодорожный вокзал",
+      "latitude": 58.0430,
+      "longitude": 38.8400,
+      "type": "bus"
+    },
+    {
+      "id": "stop_005",
+      "name": "Больница № 4",
+      "latitude": 58.0550,
+      "longitude": 38.8700,
+      "type": "bus"
+    },
+    {
+      "id": "stop_006",
+      "name": "Микрорайон ГЭС-14",
+      "latitude": 58.0600,
+      "longitude": 38.8800,
+      "type": "bus"
+    },
+    {
+      "id": "stop_007",
+      "name": "Троллейбусный парк",
+      "latitude": 58.0400,
+      "longitude": 38.8300,
+      "type": "bus"
+    },
+    {
+      "id": "stop_008",
+      "name": "Мариевка",
+      "latitude": 58.0350,
+      "longitude": 38.8200,
+      "type": "bus"
+    },
+    {
+      "id": "stop_009",
+      "name": "Соборная площадь",
+      "latitude": 58.0440,
+      "longitude": 38.8420,
+      "type": "bus"
+    },
+    {
+      "id": "stop_010",
+      "name": "Улица Каляева",
+      "latitude": 58.0460,
+      "longitude": 38.8440,
+      "type": "bus"
+    },
+    {
+      "id": "stop_011",
+      "name": "Слип",
+      "latitude": 58.0380,
+      "longitude": 38.8250,
+      "type": "bus"
+    },
+    {
+      "id": "stop_012",
+      "name": "Улица Балобановская",
+      "latitude": 58.0420,
+      "longitude": 38.8380,
+      "type": "bus"
+    },
+    {
+      "id": "stop_013",
+      "name": "Призма",
+      "latitude": 58.0470,
+      "longitude": 38.8460,
+      "type": "bus"
+    },
+    {
+      "id": "stop_014",
+      "name": "ЗАО «Свобода»",
+      "latitude": 58.0410,
+      "longitude": 38.8360,
+      "type": "bus"
+    },
+    {
+      "id": "stop_015",
+      "name": "Больница № 3",
+      "latitude": 58.0520,
+      "longitude": 38.8650,
+      "type": "bus"
+    },
+    {
+      "id": "stop_016",
+      "name": "Железнодорожный переезд",
+      "latitude": 58.0400,
+      "longitude": 38.8320,
+      "type": "bus"
+    },
+    {
+      "id": "stop_017",
+      "name": "Улица Тарасова",
+      "latitude": 58.0450,
+      "longitude": 38.8430,
+      "type": "bus"
+    },
+    {
+      "id": "stop_018",
+      "name": "Улица Максима Горького",
+      "latitude": 58.0430,
+      "longitude": 38.8410,
+      "type": "bus"
+    },
+    {
+      "id": "stop_019",
+      "name": "Улица Костромская",
+      "latitude": 58.0440,
+      "longitude": 38.8400,
+      "type": "bus"
+    },
+    {
+      "id": "stop_020",
+      "name": "Улица Расторгуева",
+      "latitude": 58.0460,
+      "longitude": 38.8480,
+      "type": "trolleybus"
+    },
+    {
+      "id": "stop_021",
+      "name": "Улица Куйбышева",
+      "latitude": 58.0480,
+      "longitude": 38.8500,
+      "type": "trolleybus"
+    },
+    {
+      "id": "stop_022",
+      "name": "Улица Блюхера",
+      "latitude": 58.0470,
+      "longitude": 38.8490,
+      "type": "trolleybus"
+    },
+    {
+      "id": "stop_023",
+      "name": "Сады «Дружба»",
+      "latitude": 58.0300,
+      "longitude": 38.8100,
+      "type": "bus"
+    }
+  ]
+}
+
